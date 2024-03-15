@@ -105,11 +105,11 @@ const Header = () => {
               OOP, Database and solve 500+ coding problems to become an
               exceptionally well world-class Programmer.
             </p>
-            <div className="flex flex-col md:flex-row lg:flex-row gap-5">
-              <button className="rounded-3xl  btn w-30 md:w-40 lg:w-40 py-4 bg-[#0BE58A] text-black">
+            <div className="flex flex-col md:flex-row lg:flex-row gap-5 ">
+              <span className="hover:bg-gray-300 border-2 w-40 md:w-40 lg:w-40  rounded-3xl px-5 py-4   bg-[#0BE58A] text-black">
                 Explore Now
-              </button>
-              <span className="border-2 w-40 md:w-40 lg:w-40 border-black rounded-3xl px-5 py-4 text-white">
+              </span>
+              <span className="hover:bg-slate-400 border-2 w-40 md:w-40 lg:w-40 border-black rounded-3xl  px-5 py-4 text-white mb-3">
                 Our Feedback
               </span>
             </div>

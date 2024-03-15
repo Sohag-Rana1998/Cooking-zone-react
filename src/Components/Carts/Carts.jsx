@@ -1,18 +1,27 @@
+/* eslint-disable react/prop-types */
 import Cooking from '../Cooking/Cooking';
 import WantToCook from '../WantToCook/WantToCook';
-import WantToCookTable from '../WantToCookTable/WantToCookTable';
 
-const Carts = () => {
+const Carts = ({ carts, handleCooking, cookings }) => {
+  const totalCalories = cookings.reduce(
+    (a, b) => a + parseInt(b.calories.slice(0, 3)),
+    0
+  );
+  const time = cookings.reduce(
+    (a, b) => a + parseInt(b.preparing_time.slice(0, 2)),
+    0
+  );
+  console.log(totalCalories);
   return (
     <div className="w-full p-3 border-2 border-gray-500  bg-gray-200 rounded-3xl mt-5">
       <div>
-        <WantToCook></WantToCook>
-        <Cooking></Cooking>
+        <WantToCook carts={carts} handleCooking={handleCooking}></WantToCook>
+        <Cooking cookings={cookings}></Cooking>
       </div>
 
       <div className="mt-10 font-lexend font-bold text-lg">
-        <h3 className="">Total Time = 45 minutes </h3>
-        <h3>Total Calories = 1050 calories </h3>
+        <h3 className="">Total Time = {time} minutes </h3>
+        <h3>Total Calories = {totalCalories} calories </h3>
       </div>
     </div>
   );

@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
 import Carts from '../Carts/Carts';
 import Items from '../Items/Items';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+export let count = 0;
 const Main = () => {
   const [recipes, setRecipes] = useState([]);
+  const [carts, setCarts] = useState([]);
+  const [cookings, setCookings] = useState([]);
 
   useEffect(() => {
     fetch('Recipes.json')
@@ -11,7 +15,27 @@ const Main = () => {
       .then(data => setRecipes(data));
   }, []);
 
-  console.log(recipes);
+  const handleCooking = cooking => {
+    const remainingCard = carts.filter(
+      cart => cart.recipe_id !== cooking.recipe_id
+    );
+    setCarts(remainingCard);
+
+    setCookings([...cookings, cooking]);
+
+    count--;
+  };
+
+  const handleCarts = cart => {
+    const isExist = carts.find(item => item.recipe_id == cart.recipe_id);
+    if (!isExist) {
+      const newCarts = [...carts, cart];
+      setCarts(newCarts);
+      count++;
+    } else {
+      toast('You have already selected this recipe...');
+    }
+  };
 
   return (
     <div className="container mx-auto">
@@ -26,12 +50,17 @@ const Main = () => {
 
       <div className="container mx-auto flex justify-between flex-col md:flex-row lg:flex-row gap-5">
         <div className="w-full md:w-[45%] lg:w-[60%]">
-          <Items></Items>
+          <Items recipes={recipes} handleCarts={handleCarts}></Items>
         </div>
         <div className="w-full md:w-[50%] lg:w-[35%]">
-          <Carts></Carts>
+          <Carts
+            carts={carts}
+            handleCooking={handleCooking}
+            cookings={cookings}
+          ></Carts>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
