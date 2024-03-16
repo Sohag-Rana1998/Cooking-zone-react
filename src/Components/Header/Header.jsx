@@ -100,7 +100,7 @@ const Header = () => {
 
       <div className="text-white font-lexend">
         <div className=" w-full rounded-3xl h-auto md:h-[450px] lg:h-[600px] bg-[url(https://i.ibb.co/FW2K9bh/Rectangle-1.png)]  image-full bg-center">
-          <div className="flex w-full h-full text-center px-4 md:px-20 lg:px-40 flex-col justify-center pt-5 md:pt-10 items-center space-y-3 md:space-y-5 lg:space-y-10">
+          <div className="flex w-full h-full text-center px-5 md:px-20 lg:px-40 flex-col justify-center pt-5 md:pt-10 lg:pt-0 items-center space-y-3 md:space-y-5 lg:space-y-10">
             <h2 className=" text-3xl md:text-4xl lg:text-6xl font-bold font-lexend">
               Discover an exceptional cooking class tailored for you!
             </h2>
