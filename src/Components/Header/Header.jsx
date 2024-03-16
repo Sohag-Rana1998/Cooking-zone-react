@@ -7,10 +7,7 @@ const Header = () => {
     <div className="container mx-auto">
       {/* Nav content */}
       <div>
-        <div className="text-2xl font-bold font-lexend mt-5 text-center block md:hidden lg:hidden">
-          Recipe Calories
-        </div>
-        <nav class="w-full my-10">
+        <nav class="w-full my-5">
           <div class=" flex justify-between lg:gap-10 font-rail w-full">
             <div class="flex justify-between">
               <div class="dropdown">
@@ -48,10 +45,17 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <div class=" flex justify-start">
-                <a class="btn btn-ghost text-3xl font-lexend font-extrabold  hidden md:block lg:block lg:text-4xl">
-                  Recipe Calories
+              <div class=" flex justify-start items-center">
+                <a class="hover:bg-slate-300">
+                  <img
+                    className="w-20  h-16 rounded-2xl"
+                    src="https://i.ibb.co/6W51jmC/cooking-zone-logo-removebg-preview.png"
+                    alt=""
+                  />
                 </a>
+                <h3 className="text-3xl font-lexend font-extrabold  hidden md:block lg:block lg:text-4xl">
+                  Cooking Zone
+                </h3>
               </div>
             </div>
             <div class="navbar-center hidden lg:block  ">
@@ -101,9 +105,11 @@ const Header = () => {
               Discover an exceptional cooking class tailored for you!
             </h2>
             <p>
-              Learn and Master Basic Programming, Data Structures, Algorithm,
-              OOP, Database and solve 500+ coding problems to become an
-              exceptionally well world-class Programmer.
+              Cooking zone is one of the best food blogs out there! Its a
+              perfect blend of simplicity and adventure. Lindsays cooking
+              website is all about fun, tasty recipes. Cooking zone is one of
+              the best food blogs out there! Lindsays cooking website is all
+              about fun, tasty recipes.
             </p>
             <div className="flex flex-col md:flex-row lg:flex-row gap-0 md:gap-5 lg:gap-5 ">
               <a href="">

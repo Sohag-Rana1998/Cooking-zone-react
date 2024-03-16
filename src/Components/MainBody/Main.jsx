@@ -38,10 +38,10 @@ const Main = () => {
     <div className="container mx-auto">
       <div className="text-center mt-5 lg:mt-10">
         <h1 className="text-5xl mb-5 font-lexend font-bold">Our Recipes</h1>
-        <p className="font-lexend">
-          Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-          vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-          elementum mauris aenean neque.
+        <p className="font-lexend text-black fill-slate-900">
+          The goal at Damn Delicious is to make amazing food quick and easy. Its
+          perfect for those <br /> who want yummy meals without spending hours
+          in the kitchen.You can choose of our any delicious recipe.
         </p>
       </div>
 
