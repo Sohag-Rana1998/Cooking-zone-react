@@ -1,4 +1,3 @@
-import { FaBeer } from 'react-icons/fa';
 import './index.css';
 import Header from './Components/Header/Header';
 import Main from './Components/MainBody/Main';

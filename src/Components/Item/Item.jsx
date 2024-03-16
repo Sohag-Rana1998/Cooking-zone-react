@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
+
 import { MdOutlineWatchLater } from 'react-icons/md';
 import { FaFire } from 'react-icons/fa';
 
 const Item = ({ recipe, handleCarts }) => {
   const {
-    recipe_id,
     recipe_name,
     short_description,
     ingredients,
@@ -52,4 +53,8 @@ const Item = ({ recipe, handleCarts }) => {
   );
 };
 
+Item.propTypes = {
+  recipe: PropTypes.object.isRequired,
+  handleCarts: PropTypes.func.isRequired,
+};
 export default Item;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Item from '../Item/Item';
 
 const Items = ({ recipes, handleCarts }) => {
@@ -14,4 +15,8 @@ const Items = ({ recipes, handleCarts }) => {
   );
 };
 
+Items.propTypes = {
+  recipes: PropTypes.array.isRequired,
+  handleCarts: PropTypes.func.isRequired,
+};
 export default Items;

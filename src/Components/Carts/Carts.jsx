@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import Cooking from '../Cooking/Cooking';
 import WantToCook from '../WantToCook/WantToCook';
 
@@ -26,5 +26,9 @@ const Carts = ({ carts, handleCooking, cookings }) => {
     </div>
   );
 };
-
+Carts.propTypes = {
+  carts: PropTypes.array.isRequired,
+  handleCooking: PropTypes.func.isRequired,
+  cookings: PropTypes.array.isRequired,
+};
 export default Carts;

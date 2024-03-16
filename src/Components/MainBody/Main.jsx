@@ -3,7 +3,7 @@ import Carts from '../Carts/Carts';
 import Items from '../Items/Items';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-export let count = 0;
+
 const Main = () => {
   const [recipes, setRecipes] = useState([]);
   const [carts, setCarts] = useState([]);
@@ -22,8 +22,6 @@ const Main = () => {
     setCarts(remainingCard);
 
     setCookings([...cookings, cooking]);
-
-    count--;
   };
 
   const handleCarts = cart => {
@@ -31,7 +29,6 @@ const Main = () => {
     if (!isExist) {
       const newCarts = [...carts, cart];
       setCarts(newCarts);
-      count++;
     } else {
       toast('You have already selected this recipe...');
     }

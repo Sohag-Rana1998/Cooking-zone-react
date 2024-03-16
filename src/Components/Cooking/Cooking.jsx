@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const Cooking = ({ cookings }) => {
   return (
     <div className="mt-5">
@@ -35,4 +36,7 @@ const Cooking = ({ cookings }) => {
   );
 };
 
+Cooking.propTypes = {
+  cooking: PropTypes.array.isRequired,
+};
 export default Cooking;

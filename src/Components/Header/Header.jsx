@@ -54,7 +54,7 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <div class="navbar-center hidden md:block lg:block  ">
+            <div class="navbar-center hidden lg:block  ">
               <ul class="menu menu-horizontal px-1 text-base">
                 <li>
                   <a> Home</a>
@@ -74,7 +74,7 @@ const Header = () => {
             <div className="flex items-center gap-2">
               <div className="relative ">
                 <input
-                  className="bg-gray-100 font-bold text-black py-3 pl-10 w-28 lg:w-60 rounded-2xl"
+                  className="bg-gray-100 font-bold text-black py-3 pl-10 w-28 md:w-44 lg:w-60 rounded-2xl"
                   type="text"
                   name=""
                   id=""
@@ -95,7 +95,7 @@ const Header = () => {
       </div>
 
       <div className="text-white font-lexend">
-        <div className=" w-full rounded-3xl h-auto md:h-[450px] lg:h-[600px] bg-[url(https://i.ibb.co/FW2K9bh/Rectangle-1.png)]  image-full">
+        <div className=" w-full rounded-3xl h-auto md:h-[450px] lg:h-[600px] bg-[url(https://i.ibb.co/FW2K9bh/Rectangle-1.png)]  image-full bg-center">
           <div className="flex w-full h-full text-center px-4 md:px-20 lg:px-40 flex-col justify-center pt-5 md:pt-10 items-center space-y-3 md:space-y-5 lg:space-y-10">
             <h2 className=" text-3xl md:text-4xl lg:text-6xl font-bold font-lexend">
               Discover an exceptional cooking class tailored for you!
@@ -105,13 +105,19 @@ const Header = () => {
               OOP, Database and solve 500+ coding problems to become an
               exceptionally well world-class Programmer.
             </p>
-            <div className="flex flex-col md:flex-row lg:flex-row gap-5 ">
-              <span className="hover:bg-gray-300 border-2 w-40 md:w-40 lg:w-40  rounded-3xl px-5 py-4   bg-[#0BE58A] text-black">
-                Explore Now
-              </span>
-              <span className="hover:bg-slate-400 border-2 w-40 md:w-40 lg:w-40 border-black rounded-3xl  px-5 py-4 text-white mb-3">
-                Our Feedback
-              </span>
+            <div className="flex flex-col md:flex-row lg:flex-row gap-0 md:gap-5 lg:gap-5 ">
+              <a href="">
+                <div className="hover:bg-gray-300 border-2 w-40  rounded-3xl px-5 py-4 mb-5  bg-[#0BE58A] text-black">
+                  Explore Now
+                </div>
+              </a>
+
+              <a href="">
+                {' '}
+                <div className="hover:bg-slate-400 border-2 w-40 border-white rounded-3xl  px-5 py-4 text-white mb-5">
+                  Our Feedback
+                </div>
+              </a>
             </div>
           </div>
         </div>

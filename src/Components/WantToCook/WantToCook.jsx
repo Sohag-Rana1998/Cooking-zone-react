@@ -1,5 +1,4 @@
-import { count } from '../MainBody/Main';
-
+import PropTypes from 'prop-types';
 const WantToCook = ({ carts, handleCooking }) => {
   return (
     <div className="mt-5">
@@ -47,4 +46,8 @@ const WantToCook = ({ carts, handleCooking }) => {
   );
 };
 
+WantToCook.propTypes = {
+  carts: PropTypes.array.isRequired,
+  handleCooking: PropTypes.func.isRequired,
+};
 export default WantToCook;
