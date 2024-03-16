@@ -14,8 +14,8 @@ const Cooking = ({ cookings }) => {
               <tr>
                 <th></th>
                 <th>Name</th>
-                <th>Job</th>
-                <th>Favorite Color</th>
+                <th>Time</th>
+                <th>Calories</th>
               </tr>
             </thead>
             <tbody>
