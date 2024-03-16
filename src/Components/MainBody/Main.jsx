@@ -25,7 +25,10 @@ const Main = () => {
   };
 
   const handleCarts = cart => {
-    const isExist = carts.find(item => item.recipe_id == cart.recipe_id);
+    const totalCards = [...carts, ...cookings];
+
+    const isExist = totalCards.find(item => item.recipe_id == cart.recipe_id);
+
     if (!isExist) {
       const newCarts = [...carts, cart];
       setCarts(newCarts);
