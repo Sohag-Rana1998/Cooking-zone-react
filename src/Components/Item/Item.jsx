@@ -31,10 +31,10 @@ const Item = ({ recipe, handleCarts }) => {
             </ul>
           </div>
           <div className="flex justify-between ">
-            <p className="flex gap-2">
+            <p className="flex gap-2 items-center">
               <MdOutlineWatchLater></MdOutlineWatchLater> {preparing_time}
             </p>
-            <p className="flex gap-2">
+            <p className="flex gap-2 items-center">
               <FaFire></FaFire> {calories}
             </p>
           </div>
