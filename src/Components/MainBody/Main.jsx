@@ -49,10 +49,10 @@ const Main = () => {
       </div>
 
       <div className="container mx-auto flex justify-between flex-col md:flex-row lg:flex-row gap-5">
-        <div className="w-full md:w-[45%] lg:w-[60%]">
+        <div className="w-full md:w-[45%] lg:w-[58%]">
           <Items recipes={recipes} handleCarts={handleCarts}></Items>
         </div>
-        <div className="w-full md:w-[50%] lg:w-[35%]">
+        <div className="w-full md:w-[50%] lg:w-[40%]">
           <Carts
             carts={carts}
             handleCooking={handleCooking}

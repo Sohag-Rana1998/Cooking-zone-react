@@ -13,7 +13,7 @@ const Carts = ({ carts, handleCooking, cookings }) => {
   );
   console.log(totalCalories);
   return (
-    <div className="w-full p-3 border-2 border-gray-500  bg-gray-200 rounded-3xl mt-5">
+    <div className="w-full p-3 border-2 border-gray-500  bg-gray-50 rounded-3xl mt-5">
       <div>
         <WantToCook carts={carts} handleCooking={handleCooking}></WantToCook>
         <Cooking cookings={cookings}></Cooking>

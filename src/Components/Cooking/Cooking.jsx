@@ -31,12 +31,11 @@ const Cooking = ({ cookings }) => {
           </table>
         </div>
       </div>
-      <div></div>
     </div>
   );
 };
 
 Cooking.propTypes = {
-  cooking: PropTypes.array.isRequired,
+  cookings: PropTypes.array.isRequired,
 };
 export default Cooking;

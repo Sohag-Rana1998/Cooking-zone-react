@@ -42,7 +42,7 @@ const Item = ({ recipe, handleCarts }) => {
           <div className="card-actions justify-start">
             <button
               onClick={() => handleCarts(recipe)}
-              className="btn bg-[#0BE58A]"
+              className="btn bg-[#0BE58A] font-bold font-fira"
             >
               Want to Cook
             </button>
