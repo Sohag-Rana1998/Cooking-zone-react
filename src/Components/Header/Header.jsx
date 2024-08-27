@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
-import { FaUserCircle } from 'react-icons/fa';
-import { FaMagnifyingGlass } from 'react-icons/fa6';
+import { FaUserCircle } from "react-icons/fa";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -49,7 +49,7 @@ const Header = () => {
                 <a class="hover:bg-slate-300">
                   <img
                     className="w-20  h-16 rounded-2xl"
-                    src="https://i.ibb.co/6W51jmC/cooking-zone-logo-removebg-preview.png"
+                    src="https://i.postimg.cc/G3xpt7yK/cooking-zone-logo-removebg-preview.png"
                     alt=""
                   />
                 </a>
@@ -99,7 +99,7 @@ const Header = () => {
       </div>
 
       <div className="text-white font-lexend">
-        <div className=" w-full rounded-3xl h-auto md:h-[450px] lg:h-[600px] bg-[url(https://i.ibb.co/FW2K9bh/Rectangle-1.png)]  image-full bg-center">
+        <div className=" w-full rounded-3xl h-auto md:h-[450px] lg:h-[600px] bg-[url(https://i.postimg.cc/TwZYMn8y/Rectangle-1.png)]  image-full bg-center bg-no-repeat bg-cover">
           <div className="flex w-full h-full text-center px-5 md:px-20 lg:px-40 flex-col justify-center pt-5 md:pt-10 lg:pt-0 items-center space-y-3 md:space-y-5 lg:space-y-10">
             <h2 className=" text-3xl md:text-4xl lg:text-6xl font-bold font-lexend">
               Discover an exceptional cooking class tailored for you!
@@ -119,7 +119,7 @@ const Header = () => {
               </a>
 
               <a href="">
-                {' '}
+                {" "}
                 <div className="hover:bg-slate-400 border-2 w-40 border-white rounded-3xl  px-5 py-4 text-white mb-5">
                   Our Feedback
                 </div>
